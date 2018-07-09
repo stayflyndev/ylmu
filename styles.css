@@ -1,0 +1,23 @@
+body{
+    text-align: center;
+}
+
+/* buttons */
+.waves-effect.waves-pink {
+    background-color:#ff0065;
+}
+
+.waves-effect.waves-lblue {
+    background-color:#31a6ff;
+}
+
+.waves-effect.waves-lgreen {
+    background-color:#50ce55;
+}
+
+
+
+
+.btn:hover{
+    background-color: #673AB7 !important;
+}
