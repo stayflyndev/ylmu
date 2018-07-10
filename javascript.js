@@ -30,15 +30,51 @@ var sad = [
 
 ]
 
-var hope = [
-    "test3",
-    "kjkj",
+var stress = [
+    "God is the God of peace (Romans 15:33; 1 Corinthians 14:33). Peace is a fruit of the Holy Spirit and something we can ask God for any time, having complete faith that He will answer our prayer.",
+    "We are told to set our minds on the Spirit, because to set the mind on the Spirit is life and peace (Romans 8:6). When we are feeling overwhelmed, it may also help to remove ourselves from the situation, if possible. We may need to decrease our workload, knowing that it is not sinful to let go of some responsibilities for a while",
+    "Jesus teaches that our Heavenly Father knows our needs and cares about them. If God takes care of simple things like grass, flowers, and birds, won't He also care for people who are created in His image?",
+    "Rather than worry over things we cannot control, we should 'seek first the kingdom of God and his righteousness, and all these things [the necessities of life] will be added to you' (Matthew 6:33). Putting God first is a cure for anxiety",
+    "Are overwhelming circumstances causing anxiety? Have faith in God. As long as we are with Jesus, there is nothing to fear. Philippians 4:6, 7 instructs us to 'not be anxious about anything, but in everything by prayer and supplication with thanksgiving let your requests be made known unto God. And the peace of God, which surpasses all understanding, will guard your hearts and your minds in Christ Jesus.'"
+
 ]
-var fail = [
- "test",
- "kjkj",
+var anger = [
+ "Anger is not always sin. For a victim to reach a place of true health and forgiveness, he or she must first accept the trauma for what it was. In order to fully accept that an act was unjust, one must sometimes experience anger. We can handle anger biblically by seeing God in the trial. Nothing happens to us that He does not cause or allow. Though God does allow bad things to happen, He is <u> always </u> faithful to redeem them for the good of His people.",
+
+ "We can handle anger biblically by making room for God’s wrath.  Romans 12:19 both tell us to not play God. God is righteous and just, and we can trust Him who knows all and sees all to act justly",
+
+ "We can handle anger biblically by returning good for evil.(Romans 12:21). This is key to converting our anger into love. As our actions flow from our hearts, so also our hearts can be altered by our actions (Matthew 5:43-48). That is, we can change our feelings toward another by changing how we choose to act toward that person.",
+
+ "We must act to solve our part of the problem (Romans 12:18). We cannot control how others act or respond, but we can make the changes that need to be made on our part. Be still before the LORD and wait patiently for him; do not fret when men succeed in their ways, when they carry out their wicked schemes. (Psalm 37:7, NIV)",
 ]
 
+var anger = [
+    "Anger is not always sin. For a victim to reach a place of true health and forgiveness, he or she must first accept the trauma for what it was. In order to fully accept that an act was unjust, one must sometimes experience anger. We can handle anger biblically by seeing God in the trial. Nothing happens to us that He does not cause or allow. Though God does allow bad things to happen, He is <u> always </u> faithful to redeem them for the good of His people.",
+   
+    "We can handle anger biblically by making room for God’s wrath.  Romans 12:19 both tell us to not play God. God is righteous and just, and we can trust Him who knows all and sees all to act justly",
+   
+    "We can handle anger biblically by returning good for evil.(Romans 12:21). This is key to converting our anger into love. As our actions flow from our hearts, so also our hearts can be altered by our actions (Matthew 5:43-48). That is, we can change our feelings toward another by changing how we choose to act toward that person.",
+   
+    "We must act to solve our part of the problem (Romans 12:18). We cannot control how others act or respond, but we can make the changes that need to be made on our part. Be still before the LORD and wait patiently for him; do not fret when men succeed in their ways, when they carry out their wicked schemes. (Psalm 37:7, NIV)",
+   ]
+
+   var jealousy = [
+    "Love is patient, love is kind. It does not envy, it does not boast, it is not proud. It is not rude, it is not self-seeking, it is not easily angered, it keeps no record of wrongs. (1 Corinthians 13:4-5). Being jealous indicates that we are not satisfied with what God has given us. The Bible tells us to be content with what we have, for God will never fail or forsake us (Hebrews 13:5).",
+   
+    "There is nothing wrong with asking God for things we need and want in prayer, but we should ask with the firm belief that God knows exactly what we need and want and will provide for us according to His will. Being content with having our needs met in this life can go a long way in reminding us that this life is temporary and that the Kingdom of God is coming. Therefore, jealousy hinders the fruits of faithfulness and goodness.",
+   
+    "Again, remember that God wants to bless us and give us wonderful gifts, but only gifts that won’t be harmful for us. All good gifts come from God (James 1:17), so gifts that are going to be negative to our lives must come from someone else. Ecclesiastes 4:4,6 (GNTD)    I have also learned why people work so hard to succeed: it is because they envy the things their neighbors have. But it is useless. It is like chasing the wind…maybe so, but it is better to have only a little, with peace of mind, than be busy all the time with both hands, trying to catch the wind.",
+   
+    "It can be challenging to grab hold of rational thoughts and shove them into our brains to combat the irrational thoughts that have become comfortable. Focus on thankfulness. Rational thinking looks at what we have and is thankful and receptive of God’s blessings; irrational thinking looks at what others have and is spiteful and mocking of God’s blessings. Philippians 2:3 (GNTD)  Don't do anything from selfish ambition or from a cheap desire to boast, but be humble toward one another, always considering others better than yourselves.",
+   ]
+
+
+
+
+
+
+
+// functions when the buttons are clicked
 
 function weakness() {
     var ranNum = Math.floor(Math.random() * (weak.length));
@@ -55,12 +91,17 @@ function sadness() {
     document.getElementById("quoteDisplay").innerHTML = sad[ranNum];
 }
 
-function failure() {
-    var ranNum = Math.floor(Math.random() * (fail.length));
-    document.getElementById("quoteDisplay").innerHTML = fail[ranNum];
+function angered() {
+    var ranNum = Math.floor(Math.random() * (anger.length));
+    document.getElementById("quoteDisplay").innerHTML = anger[ranNum];
 }
 
-function hopeful() {
-    var ranNum = Math.floor(Math.random() * (hope.length));
-    document.getElementById("quoteDisplay").innerHTML = hope[ranNum];
+function envious() {
+    var ranNum = Math.floor(Math.random() * (jealousy.length));
+    document.getElementById("quoteDisplay").innerHTML = jealousy[ranNum];
+}
+
+function stressed() {
+    var ranNum = Math.floor(Math.random() * (stress.length));
+    document.getElementById("quoteDisplay").innerHTML = stress[ranNum];
 }
