@@ -15,7 +15,15 @@ body{
     background-color:#50ce55;
 }
 
-
+.waves-effect.waves-gold {
+    background-color:#ecbe1d;
+}
+.waves-effect.waves-lteal {
+    background-color:#66b2b2;
+}
+.waves-effect.waves-salmon {
+    background-color:#f6546a;
+}
 
 
 .btn:hover{
